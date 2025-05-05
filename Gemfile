@@ -56,3 +56,4 @@ group :development do
   gem "web-console"
 end
 
+gem 'friendly_id', '~> 5.5.0'
