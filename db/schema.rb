@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_05_16_101912) do
+ActiveRecord::Schema[8.0].define(version: 2025_05_16_103245) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -55,6 +55,14 @@ ActiveRecord::Schema[8.0].define(version: 2025_05_16_101912) do
     t.text "badge"
   end
 
+  create_table "technologies", force: :cascade do |t|
+    t.string "name"
+    t.bigint "portfolio_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["portfolio_id"], name: "index_technologies_on_portfolio_id"
+  end
+
   create_table "topics", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", null: false
@@ -62,4 +70,5 @@ ActiveRecord::Schema[8.0].define(version: 2025_05_16_101912) do
   end
 
   add_foreign_key "blogs", "topics"
+  add_foreign_key "technologies", "portfolios"
 end
