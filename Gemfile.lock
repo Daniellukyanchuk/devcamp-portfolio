@@ -62,6 +62,8 @@ GEM
     erubi (1.13.1)
     execjs (2.10.0)
     ffi (1.17.2)
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.14.7)
@@ -190,6 +192,7 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   coffee-rails (~> 4.2)
+  friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
