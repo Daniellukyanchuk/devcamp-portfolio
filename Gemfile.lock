@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/Daniellukyanchuk/danluckthename_view_tool
+  revision: 9d11e57efabd16759f43832f9c4319a120c845d0
+  branch: main
+  specs:
+    danluckthename_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -224,6 +231,7 @@ DEPENDENCIES
   bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
+  danluckthename_view_tool!
   devise (~> 4.2)
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
