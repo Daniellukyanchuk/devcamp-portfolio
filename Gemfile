@@ -64,3 +64,4 @@ gem 'jquery-rails'
 
 gem 'danluckthename_view_tool', '~> 0.1.0'
 
+gem 'petergate', '~> 3.0', '>= 3.0.1'
