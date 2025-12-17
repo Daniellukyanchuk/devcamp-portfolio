@@ -19,4 +19,16 @@ module ApplicationHelper
 	def copyright_generator
 		DanluckthenameViewTool::Renderer.copyright "Jordan Hudgens", "All rights reserved"
 	end
+
+	def nav_helper style, tag_type
+nav_links = <<NAV 
+<#{tag_type}><a href="#{root_path}" class="#{style}">Home</a></#{tag_type}>
+<#{tag_type}><a href="#{about_me_path}" class="#{style}">About Me</a></#{tag_type}>
+<#{tag_type}><a href="#{contact_path}" class="#{style}">Contact</a></#{tag_type}>
+<#{tag_type}><a href="#{blogs_path}" class="#{style}">Blogs</a></#{tag_type}>
+<#{tag_type}><a href="#{portfolios_path}" class="#{style}">Portfolio</a></#{tag_type}>
+NAV
+		
+		nav_links.html_safe
+	end
 end
