@@ -78,3 +78,6 @@ gem 'mini_magick', '~> 4.6'
 
 gem 'carrierwave-aws', '~> 1.0', '>= 1.0.2'
 gem 'dotenv-rails', '~> 2.1', '>= 2.1.2'
+gem "solargraph", "~> 0.52.0", :group => :development
+
+gem 'cocoon', '~> 1.2', '>= 1.2.9'
