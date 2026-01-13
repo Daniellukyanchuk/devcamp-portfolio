@@ -164,3 +164,40 @@ body {
 }
 
 
+.app-card-container {
+  color: black;
+  text-align:left;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.profile-img{
+  border: 1px solid grey;
+}
+
+.app-card-container a{
+  color: blue;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
+}
